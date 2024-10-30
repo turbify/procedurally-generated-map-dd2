@@ -20,38 +20,24 @@ public class WorldLevel
         }
     }
 
-    public void SetupRoutes(List<int> _routelist)
+    public void SetupRoutes(List<int> _routelist, int nextLevelSize)
     {
         for (int i = 0; i < _routelist[0]; i++)
         {
             worldPoints[0].routes[i] = true;
         }
 
-        if (worldPoints[0].routes.Count == 2)
+        if (size == 3)
         {
             for (int i = 0; i < _routelist[1]; i++)
             {
-                Debug.Log((size - i - 1));
-                worldPoints[1].routes[(worldPoints[0].routes.Count- i-1)] = true;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < _routelist[1]; i++)
-            {
-                worldPoints[1].routes[(i+_routelist[0]-1)] = true;
-            }
-
-            for (int i = 0; i < _routelist[2]; i++)
-            {
-                Debug.Log((size - i - 1));
-                worldPoints[2].routes[(worldPoints[0].routes.Count- i-1)] = true;
+                worldPoints[1].routes[(i + (_routelist[0] - 1))] = true;
             }
         }
 
-        for (int i = 0; i < _routelist[0]; i++)
+        for (int i = 0; i < _routelist[size - 1]; i++)
         {
-            worldPoints[0].routes[i] = true;
+            worldPoints[size - 1].routes[(worldPoints[0].routes.Count - i - 1)] = true;
         }
     }
 }

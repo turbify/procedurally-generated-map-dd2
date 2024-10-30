@@ -13,23 +13,8 @@ public class WorldGeneratorHandler : MonoBehaviour
     public int PointsAmountChance = 50;
     static public int pointsAmountChance = 50;
 
-    [Header("Chance to generate route from normal point")]
-    [Range(0, 100)]
-    public int NormalRouteChance = 40;
-    static public int normalRouteChance = 40;
-
-
-    static public int minNumberOfDominantRoutes = 2;
-    static public int minNumberOfNormalRoutes = 1;
-
-
-
-
     void Awake()
     {
-        pointsAmountChance = PointsAmountChance;
-        normalRouteChance = NormalRouteChance;
-
         _worldData.worldLevels.Clear();
 
         SetRandomSeed();
@@ -83,7 +68,7 @@ public class WorldGeneratorHandler : MonoBehaviour
             {
                 List<int> _routeList = SetupRouteList(previousLevel, level);
 
-                previousLevel.SetupRoutes(_routeList);
+                previousLevel.SetupRoutes(_routeList, level.size);
 
             }
 
