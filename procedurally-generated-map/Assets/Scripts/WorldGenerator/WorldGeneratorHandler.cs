@@ -1,25 +1,42 @@
 using log4net.Core;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using System.Linq;
 
 public class WorldGeneratorHandler : MonoBehaviour
 {
     [SerializeField] private int seed = 0;
-    [SerializeField] private WorldSO _worldData;
+    public WorldSO _worldData;
+
+    [Header("World size")]
+    [Range(0, 300)]
+    public int worldSize = 25;
 
     [Header("Chance to generate 2 or 3 points in line")]
     [Range(0, 100)]
     public int PointsAmountChance = 50;
     static public int pointsAmountChance = 50;
 
+    public static WorldGeneratorHandler Instance { get; private set; }
+
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         _worldData.worldLevels.Clear();
 
         SetRandomSeed();
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < worldSize; i++)
         {
             GenerateWorldLevel();
         }
@@ -74,6 +91,8 @@ public class WorldGeneratorHandler : MonoBehaviour
 
             previousLevel = level;
         }
+
+        
     }
 
     private List<int> SetupRouteList(WorldLevel previousLevel, WorldLevel level)

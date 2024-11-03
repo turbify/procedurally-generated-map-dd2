@@ -47,6 +47,7 @@ public class WorldPoint
 {
     public int index;
     public List<bool> routes = new List<bool>();
+    public Transform gpsPoint;
 
     public void CreateRoutes(int amount)
     {

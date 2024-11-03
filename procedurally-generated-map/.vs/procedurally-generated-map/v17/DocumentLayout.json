@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\",
+  "WorkspaceRootPath": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D857C1F5-9843-0974-7045-73CE624E30E5}|Player.csproj|c:\\users\\gwdze\\documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\player\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D857C1F5-9843-0974-7045-73CE624E30E5}|Player.csproj|solutionrelative:assets\\scripts\\player\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldgeneratorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|d:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldgeneratorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|solutionrelative:assets\\scripts\\worldgenerator\\worldgeneratorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|c:\\users\\gwdze\\documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{147C402C-1070-A438-BEC2-4ED5AEE312B0}|UI.csproj|D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\ui\\uimapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{147C402C-1070-A438-BEC2-4ED5AEE312B0}|UI.csproj|solutionrelative:assets\\scripts\\ui\\uimapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|d:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|solutionrelative:assets\\scripts\\worldgenerator\\worldclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D857C1F5-9843-0974-7045-73CE624E30E5}|Player.csproj|D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\player\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D857C1F5-9843-0974-7045-73CE624E30E5}|Player.csproj|solutionrelative:assets\\scripts\\player\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\assets\\scripts\\worldgenerator\\worldso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A9249F5-D366-A2A6-072D-B104287DA0DB}|WorldGenerator.csproj|solutionrelative:assets\\scripts\\worldgenerator\\worldso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,58 +34,73 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "UIMapGenerator.cs",
+              "DocumentMoniker": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\UI\\UIMapGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIMapGenerator.cs",
+              "ToolTip": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\UI\\UIMapGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIMapGenerator.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAiwCkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T02:06:36.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "inputController.cs",
-              "DocumentMoniker": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\Player\\inputController.cs",
+              "DocumentMoniker": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\Player\\inputController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\inputController.cs",
-              "ToolTip": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\Player\\inputController.cs",
+              "ToolTip": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\Player\\inputController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\inputController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAGAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T20:57:42.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "WorldSO.cs",
-              "DocumentMoniker": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
+              "DocumentMoniker": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
-              "ToolTip": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
+              "ToolTip": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
               "RelativeToolTip": "Assets\\Scripts\\WorldGenerator\\WorldSO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:49:07.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorldGeneratorHandler.cs",
-              "DocumentMoniker": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
-              "ToolTip": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAABRwDAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:48:56.562Z"
+              "WhenOpened": "2024-10-30T08:49:07.232Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "WorldClass.cs",
-              "DocumentMoniker": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
+              "DocumentMoniker": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
-              "ToolTip": "C:\\Users\\gwdze\\Documents\\unity projects\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
+              "ToolTip": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
               "RelativeToolTip": "Assets\\Scripts\\WorldGenerator\\WorldClass.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T08:49:11.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorldGeneratorHandler.cs",
+              "DocumentMoniker": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
+              "ToolTip": "D:\\unity\\procedurally-generated-map-dd2\\procedurally-generated-map\\Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WorldGenerator\\WorldGeneratorHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:48:56.562Z",
               "EditorCaption": ""
             }
           ]
