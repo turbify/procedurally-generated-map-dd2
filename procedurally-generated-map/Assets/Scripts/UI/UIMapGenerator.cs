@@ -1,3 +1,5 @@
+using Codice.CM.Common;
+using log4net.Core;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Net;
@@ -16,6 +18,9 @@ public class UIMapGenerator : MonoBehaviour
     public Material lineMaterial;
 
     public GameObject worldPointPrefab;
+
+    public GameObject cameraUI;
+    public float cameraSpeed = 5;
 
     [SerializeField] private WorldSO _worldData;
 
@@ -43,6 +48,13 @@ public class UIMapGenerator : MonoBehaviour
         GenerateRoutes();
     }
 
+    public void MoveCamera(bool up)
+    {
+        float direction = up ? 1f : -1f;
+
+        cameraUI.transform.position += new Vector3(direction * cameraSpeed, 0, 0);
+    }
+
     private void GeneratePoints()
     {
         List<WorldLevel> worldLevels = _worldData.worldLevels;
@@ -55,6 +67,7 @@ public class UIMapGenerator : MonoBehaviour
                 Vector3 position = new Vector3(height, 0, (i * offsetX) + (level.worldPoints.Count == 3 ? 0f : 0.5f));
 
                 GameObject newPointObject = Instantiate(worldPointPrefab, position, Quaternion.Euler(90, 0, 0));
+                newPointObject.transform.parent = transform;
                 level.worldPoints[i].gpsPoint = newPointObject.transform;
             }
 
@@ -77,26 +90,7 @@ public class UIMapGenerator : MonoBehaviour
                     {
                         if (previousLevel.worldPoints[i].routes[j] == true)
                         {
-                            // Create a new LineRenderer for each endpoint
-                            GameObject lineObj = new GameObject("LineRenderer_" + j);
-                            lineObj.transform.parent = previousLevel.worldPoints[i].gpsPoint;
-                            LineRenderer lineRenderer =  lineObj.AddComponent<LineRenderer>();
-
-                            // Set up the line's appearance
-                            lineRenderer.positionCount = 2; // Start and end points
-                            lineRenderer.startWidth = lineWidth;
-                            lineRenderer.endWidth = lineWidth;
-                            lineRenderer.startColor = lineColor;
-                            lineRenderer.endColor = lineColor;
-
-                            // Set material
-                            lineRenderer.material = lineMaterial != null ? lineMaterial : new Material(Shader.Find("Sprites/Default"));
-
-                            // Assign to the "GPS" layer
-                            lineObj.layer = LayerMask.NameToLayer("GPS");
-
-                            lineRenderer.SetPosition(0, previousLevel.worldPoints[i].gpsPoint.position);
-                            lineRenderer.SetPosition(1, level.worldPoints[j].gpsPoint.position);
+                            CreateRoute(previousLevel, level, i, j);
                         }
                     }
                 }
@@ -104,5 +98,29 @@ public class UIMapGenerator : MonoBehaviour
 
             previousLevel = level;
         }
+    }
+
+    private void CreateRoute(WorldLevel previousLevel, WorldLevel level, int worldpoints, int routes)
+    {
+        // Create a new LineRenderer for each endpoint
+        GameObject lineObj = new GameObject("LineRenderer_" + routes);
+        lineObj.transform.parent = previousLevel.worldPoints[worldpoints].gpsPoint;
+        LineRenderer lineRenderer = lineObj.AddComponent<LineRenderer>();
+
+        // Set up the line's appearance
+        lineRenderer.positionCount = 2; // Start and end points
+        lineRenderer.startWidth = lineWidth;
+        lineRenderer.endWidth = lineWidth;
+        lineRenderer.startColor = lineColor;
+        lineRenderer.endColor = lineColor;
+
+        // Set material
+        lineRenderer.material = lineMaterial != null ? lineMaterial : new Material(Shader.Find("Sprites/Default"));
+
+        // Assign to the "GPS" layer
+        lineObj.layer = LayerMask.NameToLayer("GPS");
+
+        lineRenderer.SetPosition(0, previousLevel.worldPoints[worldpoints].gpsPoint.position);
+        lineRenderer.SetPosition(1, level.worldPoints[routes].gpsPoint.position);
     }
 }
